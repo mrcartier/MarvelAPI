@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<ComicsItem>, t: Throwable) {
                 var mStringList = ArrayList<String>()
-                mStringList = retrieveVals() //use this to build UI when network failure
+                mStringList = retrieveVals()
 
                 val name = mStringList[0]
                 val description = mStringList[1]
