@@ -47,8 +47,8 @@ class MainActivity : AppCompatActivity() {
         val simpleDateFormat = SimpleDateFormat("ddMMyyyyhhmmss")
         val format = simpleDateFormat.format(Date())
 
-        val privKey = "9199510fb4237e75942a3833c8bedf6d5d7a68f5" //YOUR PRIVATE KEY
-        val pubKey = "91c2e5ef940b4f637e07fdcc0851b7c5" //YOUR PUBLIC KEY
+        val privKey = "ABC" //YOUR PRIVATE KEY
+        val pubKey = "123" //YOUR PUBLIC KEY
 
         val toHash = format + privKey + pubKey
 
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
         call.enqueue(object : Callback<ComicsItem> {
             override fun onResponse(call: Call<ComicsItem>, response: retrofit2.Response<ComicsItem>) {
-                //System.out.println("marvel response is " + response.raw());
+                
                 if (response.isSuccessful) {
 
                     val data = response.body()!!.data
