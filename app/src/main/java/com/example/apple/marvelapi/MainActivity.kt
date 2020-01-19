@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
                 model.name.set(name)
                 model.description.set(description)
 
-                Toast.makeText(applicationContext, "Error with API", Toast.LENGTH_LONG).show()
+                //Toast.makeText(applicationContext, "Error with API", Toast.LENGTH_LONG).show()
             }
         })
     }
